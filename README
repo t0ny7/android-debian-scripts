@@ -1,0 +1,18 @@
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+I hold no responsibility if these scripts damage your phone, cat, dog or any other device. 
+
+Currently these script are here for people who know what they are doing. I will make it easier and write more documentation soon.
+
+At the beginning of these scripts there are two variable you need to change before using. mnt is where you want your Debian environment mounted. On my phone /sdcard is linked to /mnt/sdcard so I need to use /mnt/sdcard. img is where your image is.
+
+start-deb.sh starts your Debian environment.
+
+stop-deb.sh stops your Debian environment. You need to manually stop any process that in running so that it can unmount the image. This will be automatic in the future.
+
+deb-shell.sh Takes you to a shell.
+
+TODO:
+* Have stop-deb.sh detect running process in the Debian environment and kill them so it can unmount the image.
